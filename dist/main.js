@@ -72,4 +72,5 @@ function paintMap() {
 	document.getElementById('workspace').addEventListener("input", function () {
 	debounce(paintMap, 500)();
 	paintSliderValues();
+	}
 }
