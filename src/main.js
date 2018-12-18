@@ -73,4 +73,4 @@ function paintMap() {
 	debounce(paintMap, 500)();
 	paintSliderValues();
 	});
-}
+
