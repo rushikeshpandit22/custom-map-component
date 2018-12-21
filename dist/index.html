@@ -3,6 +3,7 @@
 	<head>
 		<title>Maps Block</title>
 		<script type="text/javascript" src="https://7291811.collect.igodigital.com/collect.js"> </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
 	<!--<script type="text/javascript">
@@ -20,12 +21,13 @@
    	_etmc.push(["trackPageView"]);	 
 		
 	function analyticsDemo(){
-		console.log('Inside analyticsDemo');
+		console.log('Inside analyticsDemo',$(this).get(0).value);
 	 _etmc.push(["setOrgId", "7291811"]);       
-   	_etmc.push(["trackPageView", { "search" : $(this).value }]);	 
+   	_etmc.push(["trackPageView", { "search" : $(this).get(0).value }]);	 
 
 	}
-	</script>	
+	</script>
+	
 		
 		<article class="slds-card">
   <div class="slds-card__header slds-grid">
