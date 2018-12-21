@@ -21,9 +21,9 @@
    	_etmc.push(["trackPageView"]);	 
 		
 	function analyticsDemo(){
-		console.log('Inside analyticsDemo',$(this).get(0).value);
+		console.log('Inside analyticsDemo',document.getElementById('text-input-id-44').value);
 	 _etmc.push(["setOrgId", "7291811"]);       
-   	_etmc.push(["trackPageView", { "search" : $(this).get(0).value }]);	 
+   	_etmc.push(["trackPageView", { "search" : document.getElementById('text-input-id-44').value}]);	 
 
 	}
 	</script>
